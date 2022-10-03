@@ -20,8 +20,10 @@ public class Main {
             LocalTime t0 = LocalTime.now();
 
             for (int i=0; i<array.length; i++) {
+                System.out.println("Running!");
                 if (array[i].equals("nemo")) {
                     System.out.println("Found Nemo!");
+                    break;
                 }
             }
 
