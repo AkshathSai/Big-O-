@@ -1,14 +1,19 @@
 package org.example;
 
 import java.time.Duration;
-import java.time.Instant;
 import java.time.LocalTime;
+import java.util.Arrays;
 
 public class Main {
 
     static String[] nemo = new String[]{"nemo"};
 
+    static String[] largeArray = new String[10000];
+
     public static void main(String[] args) {
+
+        //Simulating 10000 inputs
+        Arrays.fill(largeArray,"nemo");
 
         Interf interf = (array) -> {
 
@@ -25,8 +30,8 @@ public class Main {
             System.out.println("Call to find nemo took " + Duration.between(t0, t1).getNano());
         };
 
-        interf.findNemo(nemo);
-
+        //interf.findNemo(nemo); //O(n)
+        interf.findNemo(largeArray); //O(n)
     }
 
 
