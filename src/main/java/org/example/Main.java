@@ -10,6 +10,9 @@ public class Main {
 
     static String[] largeArray = new String[10000];
 
+    static String[] everyone = new String[]{"dory", "bruce", "marlin", "squirt", "hank",
+                                            "grill", "nemo", "bloat", "nigel", "darla"};
+
     public static void main(String[] args) {
 
         //Simulating 10000 inputs
@@ -33,7 +36,8 @@ public class Main {
         };
 
         //interf.findNemo(nemo); //O(n)
-        interf.findNemo(largeArray); //O(n)
+        interf.findNemo(everyone); //O(n)
+        //interf.findNemo(largeArray); //O(n)
     }
 
 
