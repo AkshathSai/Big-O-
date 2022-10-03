@@ -12,7 +12,6 @@ public class Main {
 
         Interf interf = (array) -> {
 
-            //Instant t0 = Instant.now();
             LocalTime t0 = LocalTime.now();
 
             for (int i=0; i<array.length; i++) {
@@ -21,7 +20,6 @@ public class Main {
                 }
             }
 
-            //Instant t1 = Instant.now();
             LocalTime t1 = LocalTime.now();
 
             System.out.println("Call to find nemo took " + Duration.between(t0, t1).getNano());
