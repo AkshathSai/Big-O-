@@ -58,7 +58,7 @@ public class Main {
          * It doesn't matter how many inputs we have, it's always going to run the same,
          * this code is very scalable
          *
-         * i.e. Even if we pump in a 1000 boxes we're going to pack only 2 of them
+         * i.e. Even if we pump in 1000 boxes we're going to pack only 2 of them
          */
         packBoxesInterface.logFirstTwoBoxes(boxes); //O(2) This function in total is running O(2)
     }
