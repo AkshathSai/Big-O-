@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.functionalinterface.FindNemoInterface;
+import org.example.functionalinterface.ProcessBoxesInterface;
+
 import java.time.Duration;
 import java.time.LocalTime;
 import java.util.Arrays;
