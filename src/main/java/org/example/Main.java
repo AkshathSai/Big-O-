@@ -12,7 +12,7 @@ public class Main {
     static String[] nemo = new String[]{"nemo"};
     static String[] largeArray = new String[10000];
 
-    /** Worst case if 'nemo' is in the last
+    /** Worst case if 'nemo' is in the last O(n)
      *  Best case if 'nemo' is the first in the list O(1)
      */
     static String[] everyone = new String[]{"dory", "bruce", "marlin", "squirt", "hank",
