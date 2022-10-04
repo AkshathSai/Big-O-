@@ -1,6 +1,6 @@
 package org.example.functionalinterface;
 
-public interface ProcessBoxesInterface {
+public interface PackBoxesInterface {
 
     public void logFirstTwoBoxes(Object[] boxes);
 }

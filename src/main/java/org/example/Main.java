@@ -1,7 +1,7 @@
 package org.example;
 
 import org.example.functionalinterface.FindNemoInterface;
-import org.example.functionalinterface.ProcessBoxesInterface;
+import org.example.functionalinterface.PackBoxesInterface;
 
 import java.time.Duration;
 import java.time.LocalTime;
@@ -45,16 +45,22 @@ public class Main {
          * If we had the largeArray the Big O would be O(10000)
          */
         //interf.findNemo(nemo); //O(n)
-        findNemoInterface.findNemo(everyone); //O(n)
+        findNemoInterface.findNemo(everyone); //O(n) --> Linear Time [It simply means that the Big O depends on the number of inputs/number of Fish in this case]
         //interf.findNemo(largeArray); //O(n)
 
 
-        ProcessBoxesInterface processBoxesInterface = boxes -> {
+        PackBoxesInterface packBoxesInterface = boxes -> {
             System.out.println(boxes[0]);
             System.out.println(boxes[1]);
         };
 
-        processBoxesInterface.logFirstTwoBoxes(boxes); //O(2) This function in total is running O(2)
+        /** O(1) --> Constant Time
+         * It doesn't matter how many inputs we have, it's always going to run the same,
+         * this code is very scalable
+         *
+         * i.e. Even if we pump in a 1000 boxes we're going to pack only 2 of them
+         */
+        packBoxesInterface.logFirstTwoBoxes(boxes); //O(2) This function in total is running O(2)
     }
 
 
