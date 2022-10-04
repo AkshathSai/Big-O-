@@ -21,7 +21,7 @@ public class Main {
         //Simulating 10000 inputs
         Arrays.fill(largeArray,"nemo");
 
-        Interf interf = (array) -> {
+        Interf interf = array -> {
 
             LocalTime t0 = LocalTime.now();
 
