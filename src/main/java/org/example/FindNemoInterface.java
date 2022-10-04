@@ -1,6 +1,6 @@
 package org.example;
 
-public interface Interf {
+public interface FindNemoInterface {
 
     public void findNemo(String[] array);
 
