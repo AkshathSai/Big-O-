@@ -11,8 +11,8 @@ Scalable: (Trade off either Speed or Memory)
 
 Three pillars of Programming:
 1. Readable
-2. Memory
-3. Speed
+2. Memory (Space Complexity)
+3. Speed (Time Complexity)
 
 
 Big O notation is what allows us to measure the idea of scalable code.
