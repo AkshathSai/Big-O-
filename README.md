@@ -1,4 +1,20 @@
 # Big-O-
+
+What is Good code?
+
+1. Readable &
+2. Scalable
+
+Scalable: (Trade off either Speed or Memory)
+1. Memory  
+2. Speed
+
+Three pillars of Programming:
+1. Readable
+2. Memory
+3. Speed
+
+
 Big O notation is what allows us to measure the idea of scalable code.
 
 This repository offers a quick description of the Big-O of many example functions implemented in both JavaScript and Java
@@ -70,9 +86,7 @@ Big O Simplification Rules:
 ---
 
 * What Causes Space Complexity?
-
-
-* Variables
-* Data Structures
-* Function Call
-* Allocation
+1. Variables
+2. Data Structures
+3. Function Call
+4. Allocation
