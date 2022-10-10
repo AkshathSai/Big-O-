@@ -5,39 +5,39 @@ This repository offers a quick description of the Big-O of many example function
 
 O(n) --> Linear Time 
 
-- As our number of items increase our number of opeartions increase as well linearly
-
-What factors contribute to O(n) [linear time]?
-  
--for loops, while loops through n items
-
+* As our number of items increase our number of opeartions increase as well linearly
+* What factors contribute to O(n) [linear time]? 
+* for loops, while loops through n items
 
 O(1) --> Constant Time 
 
-- It doesn't matter how many inputs we have, it's always going to run the same, this code is very scalable
+* It doesn't matter how many inputs we have, it's always going to run the same, this code is very scalable
+* What factors contribute to O(1) [constant time]?
+* no loops, variable assignation
 
-What factors contribute to O(1) [constant time]?
+0(n^2) --> Quadratic Time
 
-– no loops, variable assignation
+* Every time the number of inputs increase, number of operations increase quadratically
 
+* Nested loops result in quadratic time
 
-Big Os
+<details>
+<summary>Summary (Credit ZTM)</summary>
+</details>
 
-O(1) Constant – no loops
+Big Os:
 
-O(log N) Logarithmic – usually searching algorithms have log n if they are sorted (Binary Search)
-
-O(n) Linear – for loops, while loops through n items
-
-O(n log(n)) Log Linear – usually sorting operations
-
-O(n^2) Quadratic – every element in a collection needs to be compared to ever other element. Two
+* O(1) Constant – no loops
+* O(log N) Logarithmic – usually searching algorithms have log n if they are sorted (Binary Search)
+* O(n) Linear – for loops, while loops through n items
+* O(n log(n)) Log Linear – usually sorting operations
+* O(n^2) Quadratic – every element in a collection needs to be compared to ever other element. Two
 nested loops
+* O(2^n) Exponential – recursive algorithms that solves a problem of size N
+* O(n!) Factorial – you are adding a loop for every element
 
-O(2^n) Exponential – recursive algorithms that solves a problem of size N
-
-O(n!) Factorial – you are adding a loop for every element
-
+Note:
+----
 Iterating through half a collection is still O(n)
 
 Two separate collections: O(a * b)
@@ -54,22 +54,23 @@ Outside Function call (function())
 
 Big O Simplification Rules:
 
-Rule 1: Always worst Case
+* <b>Rule 1:</b> Always worst Case
 
-Rule 2: Remove Constants
+* <b>Rule 2:</b> Remove Constants
 
-Rule 3:
-* Different inputs should have different variables: O(a + b)
+* <b>Rule 3:</b>
+1. Different inputs should have different variables: O(a + b)
+2. A and B arrays nested would be: O(a * b)
+3. '+' for steps in order
+4. '*' for nested steps
 
-* A and B arrays nested would be: O(a * b)
+* <b>Rule 4:</b> Drop Non-dominant terms
 
-'+' for steps in order
+---
 
-'*' for nested steps
+* What Causes Space Complexity?
 
-Rule 4: Drop Non-dominant terms
 
-What Causes Space Complexity?
 * Variables
 * Data Structures
 * Function Call
