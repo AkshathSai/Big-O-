@@ -18,7 +18,6 @@ O(1) --> Constant Time
 0(n^2) --> Quadratic Time
 
 * Every time the number of inputs increase, number of operations increase quadratically
-
 * Nested loops result in quadratic time
 
 <details>
@@ -51,6 +50,8 @@ Comparisons (<, >, ==)
 Looping (for, while)
 
 Outside Function call (function())
+
+---
 
 Big O Simplification Rules:
 
