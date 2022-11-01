@@ -1,7 +1,8 @@
 package org.example.functionalinterface;
 
+@FunctionalInterface
 public interface FindNemoInterface {
 
-    public void findNemo(String[] array);
+    void findNemo(String[] array);
 
 }

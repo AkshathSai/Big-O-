@@ -1,6 +1,7 @@
 package org.example.functionalinterface;
 
+@FunctionalInterface
 public interface PackBoxesInterface {
 
-    public void logFirstTwoBoxes(Object[] boxes);
+    void logFirstTwoBoxes(Object[] boxes);
 }
